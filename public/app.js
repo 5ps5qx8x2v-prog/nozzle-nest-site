@@ -1,9 +1,8 @@
-console.log("app.js loaded");
-
-// Temporary: confirm the button click is being detected
 document.addEventListener("click", (e) => {
-  const btn = e.target.closest("button, a");
-  if (btn && /buy/i.test(btn.textContent || "")) {
-    alert("Buy button click detected (JS is working). Next we add the Stripe link.");
+  const button = e.target.closest("button");
+  if (!button) return;
+
+  if (button.textContent.toLowerCase().includes("buy")) {
+    window.location.href = "https://buy.stripe.com/test_4gMeVd9i781q1jW3455ZC00";
   }
 });
