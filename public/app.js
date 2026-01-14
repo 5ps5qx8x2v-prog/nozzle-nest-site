@@ -1,6 +1,6 @@
 // Nozzle Nest - Buy button handler (Stripe Payment Link)
 
-const STRIPE_PAYMENT_LINK = "https://buy.stripe.com/test_4gMeVd9i781q1jw3455ZC00";
+const STRIPE_PAYMENT_LINK = "https://buy.stripe.com/test_4gMeVd9i781q1jW3455ZC00";
 
 function goToCheckout() {
   window.location.href = STRIPE_PAYMENT_LINK;
