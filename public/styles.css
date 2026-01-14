@@ -1,1 +1,26 @@
 body { font-family: Arial, sans-serif; }
+.next-steps {
+  margin-top: 16px;
+  padding: 16px;
+  border: 1px solid rgba(0,0,0,0.12);
+  border-radius: 12px;
+  background: rgba(0,0,0,0.02);
+}
+
+.next-steps h3 {
+  margin: 0 0 10px 0;
+  font-size: 16px;
+}
+
+.next-steps ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.next-steps li {
+  margin: 6px 0;
+}
+
+.next-steps a {
+  text-decoration: underline;
+}
