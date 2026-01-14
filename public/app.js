@@ -1,8 +1,20 @@
-document.addEventListener("click", (e) => {
-  const button = e.target.closest("button");
-  if (!button) return;
+// Nozzle Nest - Buy button handler (Stripe Payment Link)
 
-  if (button.textContent.toLowerCase().includes("buy")) {
-    window.location.href = "https://buy.stripe.com/test_4gMeVd9i781q1jW3455ZC00";
-  }
+const STRIPE_PAYMENT_LINK = "PASTE_YOUR_STRIPE_TEST_LINK_HERE";
+
+function goToCheckout() {
+  window.location.href = STRIPE_PAYMENT_LINK;
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Footer year (optional, but keeps your existing feature working)
+  const yearEl = document.getElementById("year");
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+  // Buy buttons
+  const buy1 = document.getElementById("buyBtn");
+  const buy2 = document.getElementById("buyBtn2");
+
+  if (buy1) buy1.addEventListener("click", goToCheckout);
+  if (buy2) buy2.addEventListener("click", goToCheckout);
 });
