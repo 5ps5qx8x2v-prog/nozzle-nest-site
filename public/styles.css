@@ -24,3 +24,10 @@ body { font-family: Arial, sans-serif; }
 .next-steps a {
   text-decoration: underline;
 }
+.hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px;
+  border: 1px solid rgba(0,0,0,0.12);
+}
