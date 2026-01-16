@@ -1,18 +1,11 @@
-// Nozzle Nest - Buy button handler (Stripe Payment Link)
+// Nozzle Nest - static site buy buttons
+// Works for any button with class="buy-button"
 
-const STRIPE_PAYMENT_LINK = "https://buy.stripe.com/test_4gMeVd9i781q1jW3455ZC00";
+const STRIPE_PAYMENT_LINK = "https://buy.stripe.com/test_XXXXXXXX"; // Replace later with LIVE link
 
-function goToCheckout() {
+document.addEventListener("click", (e) => {
+  const buyBtn = e.target.closest(".buy-button");
+  if (!buyBtn) return;
+
   window.location.href = STRIPE_PAYMENT_LINK;
-}
-
-// Footer year
-const yearEl = document.getElementById("year");
-if (yearEl) yearEl.textContent = new Date().getFullYear();
-
-// Buy buttons
-const buy1 = document.getElementById("buyBtn");
-const buy2 = document.getElementById("buyBtn2");
-
-if (buy1) buy1.addEventListener("click", goToCheckout);
-if (buy2) buy2.addEventListener("click", goToCheckout);
+});
