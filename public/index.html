@@ -2,163 +2,148 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Nozzle Nest</title>
-  <meta name="description" content="Nozzle Nest keeps your nozzles organised, easy to find, and ready to use." />
-  <link rel="stylesheet" href="/styles.css" />
+  <meta name="description" content="A proper home for your Henry nozzles. Designed and made in Cowes, Isle of Wight." />
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="./app.js" defer></script>
 </head>
+
 <body>
+  <!-- Header -->
   <header class="site-header">
-    <div class="container header-row">
-      <a class="brand" href="#top">Nozzle Nest</a>
+    <div class="container header-inner">
+      <a class="brand" href="./">Nozzle Nest</a>
+
       <nav class="nav">
-        <a href="#how">How it works</a>
-        <a href="#included">What’s included</a>
-        <a href="#faq">FAQ</a>
-        <a class="btn btn-small" href="#buy">Buy</a>
+        <a href="#about">About</a>
+        <a href="#photos">Photos</a>
+        <a href="#compatibility">Compatibility</a>
       </nav>
     </div>
   </header>
 
-  <main id="top">
-    <section class="hero container">
-      <div class="hero-copy">
-        <h1>Keep your nozzles together. Reduce the faff.</h1>
-        <p class="lead">
-          Nozzle Nest is a practical, durable holder designed to keep your nozzles organised,
-          easy to grab, and hard to lose.
-        </p>
+  <!-- Hero -->
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="kicker">A proper home for your Henry nozzles.</p>
+          <h1>Nozzle Nest</h1>
 
-        <div class="price-row" id="buy">
-          <div>
-            <div class="price">£13.50</div>
-            <div class="subtle">Secure checkout with Stripe</div>
+          <p class="lead">
+            Yes, the name might raise an eyebrow. Yes, people may even ask questions… but no, we’re not changing it.
+            Even though the name is a bit strange, Nozzle Nest is a thoroughly practical bit of kit, designed and carefully
+            made by me, Simon, in Cowes on the Isle of Wight, UK.
+          </p>
+
+          <div class="hero-actions">
+            <button class="buy-button" type="button">Buy now</button>
+            <a class="secondary-link" href="#compatibility">Check compatibility</a>
           </div>
-          <button id="buyBtn" class="btn btn-primary">Buy now</button>
+
+          <p class="micro">
+            Secure checkout hosted by Stripe.
+          </p>
         </div>
 
-        <p class="fineprint">
-          Made in Cowes, Isle of Wight (UK). Dispatch and returns details below.
-        </p>
-<div class="next-steps">
-  <h3>What happens next</h3>
-  <ul>
-    <li><strong>Dispatch:</strong> 1–2 working days</li>
-    <li><strong>Delivery:</strong> Free UK delivery (Royal Mail Tracked 48)</li>
-    <li><strong>Returns:</strong> 30 days</li>
-    <li><strong>Support:</strong> Email <a href="mailto:simon@nozzle-nest.com">simon@nozzle-nest.com</a></li>
-  </ul>
-</div>
- </div>
-<div class="hero-media">
-  <img class="hero-img" src="/assets/hero.jpg" alt="Nozzle Nest product photo" />
-</div>
-      
-    </section>
-
-    <section class="container section">
-      <h2>Why Nozzle Nest</h2>
-      <ul class="bullets">
-        <li>Keeps nozzles in one place — visible and easy to grab.</li>
-        <li>Tough and built to last (no flimsy, disposable nonsense).</li>
-        <li>Designed and made in the UK.</li>
-        <li>Reduces lost parts, clutter, and wasted time.</li>
-      </ul>
-    </section>
-
-    <section id="how" class="container section">
-      <h2>How it works</h2>
-      <ol class="steps">
-        <li><strong>Mount or place</strong> the holder where you work.</li>
-        <li><strong>Store</strong> your nozzles so they’re always in the same spot.</li>
-        <li><strong>Grab and go</strong> when swapping or changing jobs.</li>
-      </ol>
-    </section>
-
-    <section id="included" class="container section">
-      <h2>What’s included</h2>
-      <p>
-        Nozzle Nest holder (1x). Add any compatibility notes here.
-      </p>
-    </section>
-
-    <section class="container section split">
-      <div>
-        <h2>Shipping</h2>
-        <p>
-          Add your shipping promise here (e.g. “Dispatch in 1–2 business days. UK delivery.”)
-        </p>
+        <div class="hero-media">
+          <!-- Replace hero.jpg with your best “main” image -->
+          <img src="./assets/hero.jpg" alt="Nozzle Nest holding Henry vacuum nozzles" />
+        </div>
       </div>
-      <div>
-        <h2>Returns</h2>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2>What it does</h2>
         <p>
-          Add your returns promise here (e.g. “30-day returns. Simple process.”)
+          Nozzle Nest keeps all your nozzles organised, visible, and exactly where they should be. Each nozzle has a secure,
+          dedicated place—keeping your tools tidy, easy to grab, and no longer rattling around in cupboards or on the floor.
         </p>
       </div>
     </section>
 
-    <section id="faq" class="container section">
-      <h2>FAQ</h2>
-      <details>
-        <summary>Where do you ship?</summary>
-        <p>UK to start (edit this as needed).</p>
-      </details>
-      <details>
-        <summary>How quickly do you dispatch?</summary>
-        <p>Typically 1–2 business days (edit as needed).</p>
-      </details>
-      <details>
-        <summary>How do returns work?</summary>
-        <p>Contact us and we’ll guide you through it (edit as needed).</p>
-      </details>
-    </section>
-<section id="contact" class="container section">
-  <h2>Contact</h2>
-  <p>
-    Email: <a href="mailto:simon@nozzle-nest.com">simon@nozzle-nest.com</a>
-  </p>
-</section>
+    <!-- Photos -->
+    <section id="photos" class="section">
+      <div class="container">
+        <h2>Photos</h2>
+        <p class="muted">Add any three product photos here. Filenames must match what you upload into <code>public/assets/</code>.</p>
 
-<section id="terms" class="container section">
-  <h2>Terms</h2>
-  <p>
-    Nozzle Nest is sold as a practical storage accessory. Compatibility references to Henry/Hetty/James are
-    for identification only. We are not affiliated with Numatic International.
-  </p>
-</section>
-
-<section id="privacy" class="container section">
-  <h2>Privacy</h2>
-  <p>
-    Payments are processed securely by Stripe. We do not store card details on this website.
-    If you email us, we’ll only use your details to respond and to help with your order.
-  </p>
-</section>
-    <section class="container section final-cta">
-      <h2>Ready?</h2>
-      <div class="price-row">
-        <div>
-          <div class="price">£13.50</div>
-          <div class="subtle">Checkout takes under a minute</div>
+        <div class="gallery">
+          <img src="./assets/photo-1.jpg" alt="Nozzle Nest photo 1" />
+          <img src="./assets/photo-2.jpg" alt="Nozzle Nest photo 2" />
+          <img src="./assets/photo-3.jpg" alt="Nozzle Nest photo 3" />
         </div>
-        <button id="buyBtn2" class="btn btn-primary">Buy now</button>
+      </div>
+    </section>
+
+    <!-- Longer copy -->
+    <section class="section">
+      <div class="container">
+        <h2>Why it exists</h2>
+        <p>
+          I set out to make this product so it was memorable, genuinely useful, and long lasting—particularly longer than one’s
+          patience when one’s nozzles inevitably get lost. It also needed to be the sort of thing that doesn’t fail after a few uses,
+          because that would be no good to anyone. Hopefully, a Nozzle Nest will give you years of faithful service, keep all your nozzles
+          exactly where they should be, and quietly prove that the name really is the only strange thing about it.
+        </p>
+      </div>
+    </section>
+
+    <!-- Compatibility -->
+    <section id="compatibility" class="section">
+      <div class="container">
+        <h2>Compatibility</h2>
+
+        <div class="compat-box">
+          <p><strong>Designed specifically to be compatible with:</strong></p>
+          <ul>
+            <li>Henry</li>
+            <li>Hetty</li>
+            <li>James</li>
+          </ul>
+
+          <p><strong>Not compatible with:</strong></p>
+          <ul>
+            <li>Dyson</li>
+            <li>Shark</li>
+            <li>Hoover</li>
+            <li>Other non-Numatic vacuum systems</li>
+          </ul>
+
+          <p class="muted">
+            If you’re unsure which fittings you have, please check before ordering a Nozzle Nest as it is intentionally designed for Numatic systems only.
+          </p>
+
+          <p class="muted small">
+            Henry is a trademark of Numatic International Ltd. This product is not affiliated with or endorsed by Numatic.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom Buy -->
+    <section class="final-cta">
+      <div class="container">
+        <h2>Ready to stop losing nozzles?</h2>
+        <p class="muted">Buy Nozzle Nest via secure Stripe checkout.</p>
+        <button class="buy-button" type="button">Buy now</button>
       </div>
     </section>
   </main>
 
+  <!-- Footer -->
   <footer class="site-footer">
-    <div class="container footer-row">
-      <div class="subtle">© <span id="year"></span> Nozzle Nest</div>
-     <div class="footer-links">
-  <a href="#privacy">Privacy</a>
-  <a href="#terms">Terms</a>
-  <a href="#contact">Contact</a>
-</div>
-
-      </div>
+    <div class="container footer-inner">
+      <p class="muted small">
+        Nozzle Nest is an independent product and is not affiliated with, endorsed by, or manufactured by Numatic International Ltd.
+      </p>
+      <p class="muted small">
+        Designed and made in Cowes, Isle of Wight, UK.
+      </p>
     </div>
   </footer>
-<script src="./app.js" defer></script>
 </body>
 </html>
- 
