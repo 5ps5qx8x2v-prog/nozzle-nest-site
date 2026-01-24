@@ -321,3 +321,8 @@ a.btn.btn-primary {
   transform: translateY(-1px);
   box-shadow: 0 6px 18px rgba(0,0,0,0.2);
 }
+/* Red buy button */
+.buy-red {
+  background-color: #c62828;
+  color: white;
+}
