@@ -38,7 +38,31 @@
           </p>
 
           <div class="hero-actions">
-           <a class="buy-link" href="https://buy.stripe.com/14A14ndqh9c8gIxdUufUQ00" target="_blank" rel="noopener">Buy now</a>
+          <label for="colour" style="display:block; margin: 12px 0 6px; font-weight:600;">
+  Colour
+</label>
+
+<select
+  id="colour"
+  style="padding:8px 10px; border-radius:8px; border:1px solid rgba(0,0,0,0.25); min-width:200px;"
+>
+  <option value="black">Black (Standard)</option>
+  <option value="pink">Pink (Premium)</option>
+</select>
+
+<div style="margin-top:14px;">
+  <a
+    id="buyBtn"
+    href="https://buy.stripe.com/14A14ndqh9c8gIxdUufUQ00"
+    class="btn btn-primary"
+    target="_blank"
+    rel="noopener"
+  >
+    Buy now
+  </a>
+</div>
+
+<p id="priceHint" class="muted" style="margin-top:8px;"></p>
 
 
 <a class="secondary-button" href="#compatibility">Check compatibility</a>
