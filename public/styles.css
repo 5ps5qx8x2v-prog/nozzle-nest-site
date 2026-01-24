@@ -233,3 +233,6 @@ code {
   .nav { display: none; }
   .gallery { grid-template-columns: 1fr; }
 }
+a.btn.btn-primary {
+  text-decoration: none;
+}
