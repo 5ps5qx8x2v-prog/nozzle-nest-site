@@ -286,3 +286,38 @@ a.btn.btn-primary {
 #buyBtnBottom:hover {
   opacity: 0.92;
 }
+/* Colour choice buttons (bottom section) */
+.cta-row {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+.buy-option {
+  display: inline-block;
+  padding: 16px 28px;
+  border-radius: 999px;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 16px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+/* Black button */
+.buy-black {
+  background: #000;
+  color: #fff;
+}
+
+/* Pink button */
+.buy-pink {
+  background: #e91e63;
+  color: #fff;
+}
+
+.buy-option:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+}
