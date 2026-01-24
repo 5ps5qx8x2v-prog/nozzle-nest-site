@@ -333,3 +333,51 @@ a.btn.btn-primary {
   pointer-events: none;
   border: 2px dashed rgba(0,0,0,0.2);
 }
+/* Choose colour buttons */
+.cta-row{
+  display:flex;
+  gap:14px;
+  justify-content:center;
+  align-items:center;
+  flex-wrap:wrap;
+  margin-top:18px;
+}
+
+.buy-option{
+  display:inline-block;
+  padding:12px 18px;
+  border-radius:999px;
+  font-weight:700;
+  text-decoration:none;
+  border:1px solid rgba(0,0,0,0.14);
+  box-shadow:0 6px 18px rgba(0,0,0,0.08);
+  transition:transform .08s ease, box-shadow .08s ease;
+}
+
+.buy-option:hover{
+  transform:translateY(-1px);
+  box-shadow:0 10px 22px rgba(0,0,0,0.10);
+}
+
+/* Individual colours */
+.buy-black{
+  background:#111;
+  color:#fff;
+}
+
+.buy-pink{
+  background:#e91e63;
+  color:#fff;
+}
+
+.buy-red{
+  background:#c62828;
+  color:#fff;
+}
+
+/* Coming soon styling */
+.coming-soon{
+  opacity:.55;
+  cursor:not-allowed;
+  text-decoration:none;
+}
