@@ -326,3 +326,10 @@ a.btn.btn-primary {
   background-color: #c62828;
   color: white;
 }
+.buy-option.coming-soon {
+  background: #e5e5e5;
+  color: #666;
+  cursor: not-allowed;
+  pointer-events: none;
+  border: 2px dashed rgba(0,0,0,0.2);
+}
