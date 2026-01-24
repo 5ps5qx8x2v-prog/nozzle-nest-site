@@ -282,3 +282,10 @@ a.btn.btn-primary { text-decoration: none; }
   .nav { display: none; }
   .gallery { grid-template-columns: 1fr; }
 }
+.trust-block {
+  margin-top: 10px;
+}
+
+.trust-block p {
+  margin: 6px 0;
+}
