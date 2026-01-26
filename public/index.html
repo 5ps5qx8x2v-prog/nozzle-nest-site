@@ -266,6 +266,26 @@
   </div>
 </footer>
 
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+
+    function track(id, eventName) {
+      var el = document.getElementById(id);
+      if (!el) return;
+
+      el.addEventListener("click", function () {
+        if (window.webAnalytics && typeof window.webAnalytics.track === "function") {
+          window.webAnalytics.track(eventName);
+        }
+      });
+    }
+
+    track("buy-black", "buy_black_clicked");
+    track("buy-pink", "buy_pink_clicked");
+    track("interest-red", "interest_red_clicked");
+
+  });
+</script>
 
 
 </body>
