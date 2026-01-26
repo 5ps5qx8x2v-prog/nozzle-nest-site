@@ -298,3 +298,16 @@ a.btn.btn-primary { text-decoration: none; }
   padding-left: 24px;
   padding-right: 24px;
 }
+/* TEMP: force buy buttons to be clickable (diagnostic + likely fix) */
+.final-cta,
+.final-cta * ,
+.cta-row,
+.cta-row * ,
+.buy-option {
+  pointer-events: auto !important;
+}
+
+.buy-option {
+  position: relative;
+  z-index: 10;
+}
