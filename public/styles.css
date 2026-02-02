@@ -311,3 +311,62 @@ a.btn.btn-primary { text-decoration: none; }
   position: relative;
   z-index: 10;
 }
+
+/* Soften the HERO "Buy now" button only */
+#buyBtn {
+  background: transparent !important;
+  color: #111 !important;
+  border: 2px solid rgba(0,0,0,0.18) !important;
+  box-shadow: none !important;
+}
+
+#buyBtn:hover {
+  border-color: rgba(0,0,0,0.32) !important;
+  transform: none !important;
+}
+
+/* Tighten spacing between hero and next section */
+.hero + .section {
+  padding-top: 40px;
+}
+
+/* Reduce the gap before "What it does" (About section only) */
+#about.section {
+  padding-top: 32px;
+}
+/* --- Hero layout: keep desktop the same, reorder on mobile --- */
+
+/* Desktop/tablet: 2-column grid */
+.hero-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+/* Place items in the left column */
+.hero-copy { grid-column: 1; grid-row: 1; }
+.hero-actions { grid-column: 1; grid-row: 2; }
+
+/* Logo box on the right, spanning both rows */
+.hero-media { grid-column: 2; grid-row: 1 / span 2; }
+
+/* Mobile: stack in the order we want */
+@media (max-width: 820px) {
+  .hero-inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-text  { order: 1; }
+  .hero-media { order: 2; }
+  .hero-cta   { order: 3; }   /* buttons + Stripe line together */
+}
+
+}
+/* Desktop: keep the first line in the hero (strapline) on one line */
+@media (min-width: 821px) {
+  .hero-text > p:first-of-type {
+    white-space: nowrap;
+  }
+}
