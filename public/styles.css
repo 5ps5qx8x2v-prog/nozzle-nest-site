@@ -357,9 +357,12 @@ a.btn.btn-primary { text-decoration: none; }
     display: flex;
     flex-direction: column;
   }
-  .hero-copy { order: 1; }
+
+  .hero-text  { order: 1; }
   .hero-media { order: 2; }
-  .hero-actions { order: 3; }
+  .hero-cta   { order: 3; }   /* buttons + Stripe line together */
+}
+
 }
 /* Desktop: keep the first line in the hero (strapline) on one line */
 @media (min-width: 821px) {
