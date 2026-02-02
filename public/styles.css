@@ -334,3 +334,30 @@ a.btn.btn-primary { text-decoration: none; }
 #about.section {
   padding-top: 32px;
 }
+/* --- Hero layout: keep desktop the same, reorder on mobile --- */
+
+/* Desktop/tablet: 2-column grid */
+.hero-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+/* Place items in the left column */
+.hero-copy { grid-column: 1; grid-row: 1; }
+.hero-actions { grid-column: 1; grid-row: 2; }
+
+/* Logo box on the right, spanning both rows */
+.hero-media { grid-column: 2; grid-row: 1 / span 2; }
+
+/* Mobile: stack in the order we want */
+@media (max-width: 820px) {
+  .hero-inner {
+    display: flex;
+    flex-direction: column;
+  }
+  .hero-copy { order: 1; }
+  .hero-media { order: 2; }
+  .hero-actions { order: 3; }
+}
