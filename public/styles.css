@@ -329,3 +329,8 @@ a.btn.btn-primary { text-decoration: none; }
 .hero + .section {
   padding-top: 40px;
 }
+
+/* Reduce the gap before "What it does" (About section only) */
+#about.section {
+  padding-top: 32px;
+}
