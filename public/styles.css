@@ -362,11 +362,13 @@ a.btn.btn-primary { text-decoration: none; }
   .hero-media { order: 2; }
   .hero-cta   { order: 3; }   /* buttons + Stripe line together */
 }
+/* Hero strapline: wrap nicely on all screens */
+.hero-text > p:first-of-type {
+  margin: 0 0 12px 0;
+  line-height: 1.25;
+  max-width: 52ch; /* encourages a clean-looking wrap */
+}
 
 }
-/* Desktop: keep the first line in the hero (strapline) on one line */
-@media (min-width: 821px) {
-  .hero-text > p:first-of-type {
-    white-space: nowrap;
-  }
+
 }
