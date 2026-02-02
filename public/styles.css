@@ -361,3 +361,9 @@ a.btn.btn-primary { text-decoration: none; }
   .hero-media { order: 2; }
   .hero-actions { order: 3; }
 }
+/* Desktop: keep the first line in the hero (strapline) on one line */
+@media (min-width: 821px) {
+  .hero-text > p:first-of-type {
+    white-space: nowrap;
+  }
+}
