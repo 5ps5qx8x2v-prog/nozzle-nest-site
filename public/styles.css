@@ -372,3 +372,40 @@ a.btn.btn-primary { text-decoration: none; }
 }
 
 }
+.video-feature {
+  padding: 40px 0;
+}
+
+.video-feature-inner {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 32px;
+  align-items: center;
+}
+
+.video-panel video {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+}
+
+.video-text-panel {
+  background: #f7f7f7;
+  padding: 24px;
+  border-radius: 12px;
+}
+
+.video-text-panel h2 {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.video-text-panel p {
+  margin: 0;
+}
+
+@media (max-width: 800px) {
+  .video-feature-inner {
+    grid-template-columns: 1fr;
+  }
+}
