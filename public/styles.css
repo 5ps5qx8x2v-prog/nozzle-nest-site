@@ -317,9 +317,12 @@ a.btn.btn-primary { text-decoration: none; }
 
 .video-feature-inner {
   display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  gap: 32px;
+  grid-template-columns: 1fr 420px;
+  gap: 40px;
   align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
 }
 
 .video-panel video {
