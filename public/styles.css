@@ -100,7 +100,7 @@ a {
 /* Hero */
 
 .hero {
-  padding: 28px 0 18px;
+  padding: 18px 0 10px;
 }
 
 .hero-inner {
@@ -190,7 +190,7 @@ h1 {
 /* Sections */
 
 .section {
-  padding: 26px 0;
+  padding: 18px 0;
   border-top: 1px solid rgba(0,0,0,0.06);
 }
 
@@ -372,7 +372,7 @@ a.btn.btn-primary {
 /* Video section */
 
 .video-feature {
-  padding: 24px 0;
+  padding: 12px 0;
 }
 
 .video-feature .container {
