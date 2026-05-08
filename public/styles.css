@@ -52,7 +52,7 @@ a {
 .micro {
   font-size: 0.9rem;
   color: var(--muted);
-  margin-top: 10px;
+  margin-top: 6px;
 }
 
 /* Header */
@@ -108,7 +108,9 @@ a {
   grid-template-columns: 1.05fr 0.95fr;
   gap: 18px;
   align-items: center;
-}.hero-text {
+}
+
+.hero-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -140,7 +142,7 @@ h1 {
   gap: 14px;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: 10px;
+  margin-top: 6px;
 }
 
 /* Buttons */
@@ -431,6 +433,7 @@ a.btn.btn-primary {
   .hero-inner {
     grid-template-columns: 1fr;
     gap: 20px;
+    align-items: start;
   }
 
   h1 {
