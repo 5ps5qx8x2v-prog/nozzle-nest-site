@@ -55,7 +55,7 @@ a { color: inherit; }
   letter-spacing: 0.2px;
   display: inline-block;
   padding: 6px 8px;
-  margin-left: -8px; /* keeps alignment but gives hover padding */
+  margin-left: -8px;
   border-radius: 10px;
 }
 
@@ -70,7 +70,9 @@ a { color: inherit; }
 .nav a:hover { color: #111; }
 
 /* Hero */
-.hero { padding: 56px 0; }
+.hero {
+  padding: 40px 0 28px 0;
+}
 
 .hero-inner {
   display: grid;
@@ -103,7 +105,7 @@ h1 {
   flex-wrap: wrap;
 }
 
-/* Top CTA button (link or button) */
+/* Top CTA button */
 .buy-button {
   appearance: none;
   border: 1px solid var(--border);
@@ -116,7 +118,7 @@ h1 {
 
 .buy-button:hover { border-color: rgba(0,0,0,0.25); }
 
-/* Secondary button style (link) */
+/* Secondary button style */
 .secondary-button {
   display: inline-flex;
   align-items: center;
@@ -149,7 +151,7 @@ h1 {
 
 /* Sections */
 .section {
-  padding: 48px 0;
+  padding: 28px 0;
   border-top: 1px solid rgba(0,0,0,0.06);
 }
 
@@ -189,7 +191,7 @@ code {
 
 /* Bottom CTA */
 .final-cta {
-  padding: 56px 0;
+  padding: 40px 0;
   border-top: 1px solid rgba(0,0,0,0.06);
   text-align: center;
 }
@@ -202,7 +204,7 @@ code {
 
 .footer-inner p { margin: 0 0 8px 0; }
 
-/* Back to top link (footer) */
+/* Back to top link */
 .footer-toplink { margin-top: 14px; }
 
 .back-to-top {
@@ -215,7 +217,6 @@ code {
   text-decoration: underline;
 }
 
-/* Force links that use these classes not to underline */
 a.btn.btn-primary { text-decoration: none; }
 
 /* FORCE the top Stripe buy link(s) to look like a button */
@@ -236,7 +237,7 @@ a.btn.btn-primary { text-decoration: none; }
 #buyBtn:hover,
 #buyBtnBottom:hover { opacity: 0.92; }
 
-/* --- Choose colour buttons (bottom section) --- */
+/* Choose colour buttons */
 .cta-row{
   display:flex;
   gap:14px;
@@ -267,8 +268,6 @@ a.btn.btn-primary { text-decoration: none; }
 .buy-pink{  background:#e91e63; color:#fff; }
 .buy-red{   background:#c62828; color:#fff; }
 
-/* Coming soon: keep colour, just show not-allowed cursor.
-   (It is already non-clickable because it is a <span>.) */
 .coming-soon{
   cursor:not-allowed;
   text-decoration:none;
@@ -276,12 +275,13 @@ a.btn.btn-primary { text-decoration: none; }
 
 /* Mobile */
 @media (max-width: 900px) {
-  .hero { padding: 36px 0; }
+  .hero { padding: 28px 0 18px 0; }
   .hero-inner { grid-template-columns: 1fr; }
   h1 { font-size: 2.2rem; }
   .nav { display: none; }
   .gallery { grid-template-columns: 1fr; }
 }
+
 .trust-block {
   margin-top: 10px;
 }
@@ -290,7 +290,7 @@ a.btn.btn-primary { text-decoration: none; }
   margin: 6px 0;
 }
 
-/* Fix alignment of trust block (UK-wide delivery section) */
+/* Fix alignment of trust block */
 .trust-block {
   max-width: 1100px;
   margin-left: auto;
@@ -298,11 +298,12 @@ a.btn.btn-primary { text-decoration: none; }
   padding-left: 24px;
   padding-right: 24px;
 }
-/* TEMP: force buy buttons to be clickable (diagnostic + likely fix) */
+
+/* TEMP: force buy buttons clickable */
 .final-cta,
-.final-cta * ,
+.final-cta *,
 .cta-row,
-.cta-row * ,
+.cta-row *,
 .buy-option {
   pointer-events: auto !important;
 }
@@ -311,8 +312,9 @@ a.btn.btn-primary { text-decoration: none; }
   position: relative;
   z-index: 10;
 }
+
 .video-feature {
-  padding: 56px 0;
+  padding: 32px 0;
 }
 
 .video-feature .container {
@@ -323,7 +325,7 @@ a.btn.btn-primary { text-decoration: none; }
 .video-feature-inner {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 360px;
-  gap: 32px;
+  gap: 24px;
   align-items: center;
 }
 
